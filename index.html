@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Powered Facilities Management | Facilities Management — Dubai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#081426; --navy-2:#0C1D36; --navy-3:#10263F;
+  --cyan:#22D3EE; --cyan-dk:#0E9DB5; --ice:#E8F6FA;
+  --white:#FFFFFF; --slate:#9FB2C8; --slate-dk:#5C7186;
+  --line:rgba(34,211,238,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Archivo",-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--navy);color:var(--white);line-height:1.7;font-weight:400;overflow-x:hidden}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:-.02em}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.rise{animation:rise .85s cubic-bezier(.2,.7,.2,1) both}
+.r1{animation-delay:.08s}.r2{animation-delay:.18s}.r3{animation-delay:.3s}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+/* ---------- top strip ---------- */
+.tstrip{background:var(--cyan);color:#04202A;font-size:12.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase}
+.tstrip .wrap{display:flex;justify-content:space-between;padding-top:9px;padding-bottom:9px}
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(8,20,38,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+.logo{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.01em}
+.logo .p{color:var(--cyan)}
+.navlinks{display:flex;gap:32px;align-items:center}
+.navlinks a{font-size:13px;letter-spacing:1.8px;text-transform:uppercase;color:var(--slate);font-weight:600}
+.navlinks a:hover{color:var(--cyan)}
+.btn{display:inline-block;padding:15px 34px;font-family:"Space Grotesk",sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:.28s;cursor:pointer;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)}
+.btn-cyan{background:var(--cyan);color:#04202A;padding-left:44px;padding-right:44px}
+.btn-cyan:hover{background:#fff;transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--white);clip-path:none;border-radius:2px}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+.btn-sm{padding:11px 26px;font-size:12px}
+/* ---------- hero : angular split ---------- */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%)}
+.hero::before{content:"";position:absolute;top:-120px;right:-120px;width:560px;height:560px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 65%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.hero-copy{padding:110px 64px 110px 0;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--cyan);font-size:12.5px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;margin-bottom:26px}
+.eyebrow::before{content:"";width:34px;height:3px;background:var(--cyan)}
+.hero h1{font-size:clamp(42px,5.6vw,76px);line-height:1.05;margin-bottom:24px}
+.hero h1 .cy{color:var(--cyan)}
+.hero p.lead{color:var(--slate);font-size:18.5px;max-width:480px;margin-bottom:40px;font-weight:300}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.hero-ticks{display:flex;gap:34px;margin-top:52px;flex-wrap:wrap}
+.hero-ticks div{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:1px;color:var(--ice)}
+.hero-ticks .tk{color:var(--cyan);font-weight:700}
+.hero-img{position:relative;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%)}
+.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,20,38,.55),transparent 45%),linear-gradient(0deg,rgba(8,20,38,.5),transparent 40%)}
+.hero-chip{position:absolute;z-index:2;left:16%;bottom:44px;background:rgba(8,20,38,.85);border:1px solid var(--line);border-left:4px solid var(--cyan);padding:18px 26px;backdrop-filter:blur(8px)}
+.hero-chip b{font-family:"Space Grotesk",sans-serif;font-size:17px;display:block}
+.hero-chip span{color:var(--slate);font-size:13.5px}
+/* ---------- logo band ---------- */
+.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--navy-2)}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:26px;padding-bottom:26px;flex-wrap:wrap;gap:18px}
+.band span{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--slate-dk)}
+.band span b{color:var(--cyan)}
+/* ---------- sections ---------- */
+section{padding:110px 0}
+.sec-head{max-width:720px;margin-bottom:64px}
+.sec-head h2{font-size:clamp(32px,4.4vw,54px);line-height:1.1;margin:18px 0 16px}
+.sec-head h2 .cy{color:var(--cyan)}
+.sec-head p{color:var(--slate);font-size:17.5px}
+/* services : sharp grid */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:var(--navy-2);border:1px solid var(--line);border-top:4px solid var(--cyan);padding:44px 36px;transition:.3s;position:relative}
+.svc:hover{background:var(--navy-3);transform:translateY(-6px);border-top-color:#fff}
+.svc .ic{width:58px;height:58px;background:rgba(34,211,238,.1);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--cyan);margin-bottom:24px}
+.svc h3{font-size:21px;margin-bottom:12px}
+.svc p{color:var(--slate);font-size:15px}
+.svc .more{display:inline-block;margin-top:20px;color:var(--cyan);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+/* ---------- split feature ---------- */
+.feature{background:var(--navy-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.feat-img{position:relative}
+.feat-img img{border:1px solid var(--line)}
+.feat-img::before{content:"";position:absolute;top:-22px;left:-22px;right:22px;bottom:22px;border:2px solid var(--cyan);z-index:-1}
+.feat-copy h2{font-size:clamp(30px,3.8vw,48px);line-height:1.12;margin:18px 0 20px}
+.feat-copy h2 .cy{color:var(--cyan)}
+.feat-copy>p{color:var(--slate);font-size:17px;margin-bottom:16px}
+.flist{margin:30px 0 36px}
+.flist li{list-style:none;display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px;color:var(--ice)}
+.flist .n{font-family:"Space Grotesk",sans-serif;color:var(--cyan);font-weight:700;flex:0 0 44px}
+/* ---------- process strip ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.step{padding:44px 34px;border-left:1px solid var(--line);transition:.3s}
+.step:first-child{border-left:none}
+.step:hover{background:var(--navy-2)}
+.step .sn{font-family:"Space Grotesk",sans-serif;font-size:44px;font-weight:700;color:transparent;-webkit-text-stroke:1.5px var(--cyan);line-height:1;margin-bottom:18px}
+.step h3{font-size:18px;margin-bottom:10px}
+.step p{color:var(--slate);font-size:14.5px}
+/* ---------- cta ---------- */
+.cta{background:linear-gradient(120deg,var(--cyan-dk),var(--cyan));color:#04202A;text-align:center;clip-path:polygon(0 6%,100% 0,100% 94%,0 100%);padding:130px 0}
+.cta h2{font-size:clamp(34px,5vw,62px);line-height:1.08;margin-bottom:18px;color:#04202A}
+.cta p{font-size:18px;font-weight:500;max-width:600px;margin:0 auto 38px;color:#063646}
+.cta .btn{background:#04202A;color:#fff;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);padding-left:48px;padding-right:48px}
+.cta .btn:hover{background:#000}
+.bigphone{font-family:"Space Grotesk",sans-serif;font-size:clamp(30px,4vw,50px);font-weight:700;display:block;margin-bottom:34px;color:#04202A;letter-spacing:-.01em}
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.cinfo h3{font-size:28px;margin-bottom:10px}
+.cinfo>p{color:var(--slate);margin-bottom:30px}
+.crow{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.crow .ic{width:50px;height:50px;flex:0 0 50px;background:rgba(34,211,238,.1);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cyan);font-size:18px}
+.crow b{display:block;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:4px}
+.crow span{color:var(--ice);font-size:16px}
+.form{background:var(--navy-2);border:1px solid var(--line);border-top:4px solid var(--cyan);padding:46px 42px}
+.form h3{font-size:26px;margin-bottom:8px}
+.form p{color:var(--slate);font-size:15px;margin-bottom:28px}
+.form input,.form textarea,.form select{width:100%;padding:15px 18px;background:var(--navy);border:1px solid var(--line);color:#fff;font-size:16px;margin-bottom:15px;font-family:inherit}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--cyan)}
+.form input::placeholder,.form textarea::placeholder{color:var(--slate-dk)}
+.form button{width:100%;border:none;cursor:pointer}
+/* ---------- footer ---------- */
+footer{background:#050D18;border-top:1px solid var(--line);padding:64px 0 0}
+footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.flogo{font-family:"Space Grotesk",sans-serif;font-size:24px;font-weight:700}
+.flogo .p{color:var(--cyan)}
+.fline{color:var(--slate-dk);font-size:14px;margin-top:10px;max-width:420px}
+.copy{color:var(--slate-dk);font-size:13px}
+.gallery-credit{margin-top:48px;border-top:1px solid var(--line);padding:26px 0;text-align:center;background:rgba(34,211,238,.04)}
+.gallery-credit .badge{display:inline-block;border:1px solid var(--cyan);padding:11px 30px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);font-weight:700}
+.gallery-credit p{color:var(--slate-dk);font-size:13px;margin-top:14px;max-width:660px;margin-left:auto;margin-right:auto}
+.gallery-credit a{color:var(--cyan)}
+@media(max-width:980px){.hero-grid,.feat-grid,.contact-grid{grid-template-columns:1fr}.hero-img{min-height:380px;clip-path:none}.svc-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.navlinks a:not(.btn){display:none}.hero-copy{padding:70px 0}}
+@media(max-width:620px){.svc-grid,.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="tstrip"><div class="wrap">
+  <span>Facilities Management — Dubai, UAE</span>
+  <span><bdi>+971 4 432 3998</bdi></span>
+</div></div>
+
+<nav class="nav"><div class="wrap">
+  <div class="logo"><span class="p">P</span>OWERED <span style="font-weight:400">Facilities</span></div>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#approach">Approach</a><a href="#process">Process</a><a href="#contact">Contact</a>
+    <a class="btn btn-cyan btn-sm" href="tel:+97144323998">Get a Quote</a>
+  </div>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow rise">Integrated Facilities Management</div>
+        <h1 class="rise r1">Buildings run better <span class="cy">when we're behind them.</span></h1>
+        <p class="lead rise r2">Planned maintenance, technical services and day-to-day building operations for commercial and residential properties across Dubai.</p>
+        <div class="hero-cta rise r3">
+          <a class="btn btn-cyan" href="tel:+97144323998">+971 4 432 3998</a>
+          <a class="btn btn-ghost" href="#contact">Request Proposal</a>
+        </div>
+        <div class="hero-ticks rise r3">
+          <div><span class="tk">◆</span> Planned maintenance</div>
+          <div><span class="tk">◆</span> Technical services</div>
+          <div><span class="tk">◆</span> Barsha Heights based</div>
+        </div>
+      </div>
+      <div class="hero-img rise r2">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1400&q=80&auto=format&fit=crop" alt="Dubai marina skyline">
+        <div class="hero-chip"><b>Commercial &amp; Residential</b><span>One partner for the whole building</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="band"><div class="wrap">
+  <span><b>◆</b> MEP Maintenance</span><span><b>◆</b> Soft Services</span><span><b>◆</b> Energy &amp; Retrofit</span><span><b>◆</b> 24/7 Helpdesk</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">What we manage</div>
+    <h2>Total facility care, <span class="cy">engineered precisely.</span></h2>
+    <p>Structured service lines with clear scopes — no vague promises, just delivered work.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc"><div class="ic">◈</div><h3>MEP Maintenance</h3><p>Mechanical, electrical and plumbing systems kept running at peak performance.</p><span class="more">Enquire →</span></div>
+    <div class="svc"><div class="ic">⬢</div><h3>HVAC Services</h3><p>Cooling systems serviced and optimised for Dubai's climate demands.</p><span class="more">Enquire →</span></div>
+    <div class="svc"><div class="ic">▣</div><h3>Building Fabric</h3><p>Civil repairs, painting and fit-out maintenance across your property.</p><span class="more">Enquire →</span></div>
+    <div class="svc"><div class="ic">⬣</div><h3>Soft Services</h3><p>Cleaning, landscaping, pest control and concierge support.</p><span class="more">Enquire →</span></div>
+    <div class="svc"><div class="ic">⬔</div><h3>Energy Management</h3><p>Audits and retrofits that cut consumption without cutting comfort.</p><span class="more">Enquire →</span></div>
+    <div class="svc"><div class="ic">⬒</div><h3>Annual Contracts</h3><p>Scheduled AMC plans with defined SLAs and transparent reporting.</p><span class="more">Enquire →</span></div>
+  </div>
+</div></section>
+
+<section id="approach" class="feature"><div class="wrap">
+  <div class="feat-grid">
+    <div class="feat-img rise"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80&auto=format&fit=crop" alt="Facilities engineer at work"></div>
+    <div class="feat-copy">
+      <div class="eyebrow">How we work</div>
+      <h2>Planned, measured, <span class="cy">accountable.</span></h2>
+      <p>Facilities fail quietly and expensively. Our approach replaces reactive firefighting with scheduled, documented care.</p>
+      <ul class="flist">
+        <li><span class="n">A/</span> Full asset survey before any contract begins</li>
+        <li><span class="n">B/</span> Preventive schedules built around your building</li>
+        <li><span class="n">C/</span> Every visit logged, photographed and reported</li>
+        <li><span class="n">D/</span> Single point of contact — no chasing technicians</li>
+      </ul>
+      <a class="btn btn-cyan" href="#contact">Discuss Your Building</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Engagement</div>
+    <h2>From survey to <span class="cy">steady operation.</span></h2>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="sn">01</div><h3>Site Survey</h3><p>We walk the property, catalogue assets and note risks.</p></div>
+    <div class="step"><div class="sn">02</div><h3>Scoped Proposal</h3><p>A clear plan with schedules, SLAs and pricing.</p></div>
+    <div class="step"><div class="sn">03</div><h3>Mobilisation</h3><p>Team deployed, systems baselined, reporting live.</p></div>
+    <div class="step"><div class="sn">04</div><h3>Steady State</h3><p>Planned care, monthly reports, continuous review.</p></div>
+  </div>
+</div></section>
+
+<div class="cta"><div class="wrap">
+  <h2>Let's keep your building<br>running at its best.</h2>
+  <p>Call for a site survey and a scoped proposal — no obligation.</p>
+  <a class="bigphone" href="tel:+97144323998">+971 4 432 3998</a>
+  <a class="btn" href="#contact">Request a Proposal</a>
+</div></div>
+
+<section id="contact"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Contact</div>
+    <h2>Talk to <span class="cy">our team.</span></h2>
+  </div>
+  <div class="contact-grid">
+    <div class="cinfo">
+      <h3>Contact details</h3>
+      <p>Reach out for surveys, contracts or one-off works.</p>
+      <div class="crow"><div class="ic">✆</div><div><b>Phone</b><span><bdi>+971 4 432 3998</bdi></span></div></div>
+      <div class="crow"><div class="ic">✉</div><div><b>Email</b><span>info@poweredms.com</span></div></div>
+      <div class="crow"><div class="ic">◈</div><div><b>Based in</b><span>Barsha Heights, Dubai, UAE</span></div></div>
+    </div>
+    <form class="form" onsubmit="return false">
+      <h3>Request a proposal</h3>
+      <p>Tell us about the property and we'll arrange a survey.</p>
+      <input placeholder="Your name" required>
+      <input placeholder="Company">
+      <input placeholder="Phone number" type="tel" required>
+      <input placeholder="Email address" type="email">
+      <textarea rows="4" placeholder="Property type, size, what you need..."></textarea>
+      <button class="btn btn-cyan" type="submit">Send Request →</button>
+    </form>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div>
+    <div class="flogo"><span class="p">P</span>OWERED Facilities</div>
+    <div class="fline">Integrated facilities management for commercial &amp; residential buildings — Dubai, UAE.</div>
+  </div>
+  <div class="copy">© 2026 Powered Facilities Management. All rights reserved.</div>
+</div>
+<div class="gallery-credit"><div class="wrap">
+  <span class="badge">◆ Concept by <a href="https://altuswebsolutions.com">Altus Web Solutions</a> ◆</span>
+  <p>Free homepage concept crafted exclusively for Powered Facilities Management. Your photos, logo and details slot straight in — <a href="https://altuswebsolutions.com">ask us</a> about the full website.</p>
+</div></div>
+</footer>
+
+</body>
+</html>
